@@ -1,4 +1,4 @@
-package com.li.huge
+package me.haowen.huge
 
 import com.android.build.gradle.AppPlugin
 import com.android.build.gradle.LibraryPlugin
@@ -30,6 +30,8 @@ class HugePlugin implements Plugin<Project> {
 
         project.dependencies {
             debugImplementation 'org.aspectj:aspectjrt:1.9.4'
+            debugImplementation 'com.haowen.huge:huge-runtime:1.0.0'
+            implementation 'com.haowen.huge:huge-annotations:1.0.0'
         }
 
         project.extensions.create('huge', HugeExtension)

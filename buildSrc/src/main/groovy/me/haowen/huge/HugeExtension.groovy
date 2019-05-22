@@ -1,4 +1,4 @@
-package com.li.huge
+package me.haowen.huge
 
 class HugeExtension {
 

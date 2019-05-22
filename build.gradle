@@ -4,6 +4,10 @@ buildscript {
     repositories {
         google()
         jcenter()
+        //本地Maven仓库地址
+        maven {
+            url 'file://C://Users//Li//AndroidStudioProjects//huge//repository'
+        }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.4.1'
@@ -15,6 +19,10 @@ allprojects {
     repositories {
         google()
         jcenter()
+        //本地Maven仓库地址
+        maven {
+            url 'file://C://Users//Li//AndroidStudioProjects//huge//repository'
+        }
     }
 }
 
