@@ -1,1 +1,1 @@
-include ':sample', ':huge-annotations', ':buildSrc', ':huge-runtime'
+include ':sample', ':huge-annotations', ':huge-runtime', ':huge-plugin'

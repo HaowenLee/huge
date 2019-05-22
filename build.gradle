@@ -12,6 +12,7 @@ buildscript {
     dependencies {
         classpath 'com.android.tools.build:gradle:3.4.1'
         classpath 'org.aspectj:aspectjtools:1.9.4'
+        classpath 'com.haowen.huge:huge-plugin:1.0.0'
     }
 }
 

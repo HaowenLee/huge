@@ -1,10 +1,10 @@
 apply plugin: 'com.android.application'
-apply plugin: me.haowen.huge.HugePlugin
+apply plugin: 'huge'
 
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "me.sample.huge"
+        applicationId "com.sample.huge"
         minSdkVersion 14
         targetSdkVersion 28
         versionCode 1
