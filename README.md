@@ -1,5 +1,8 @@
 # huge
 
+[![JCenter](https://img.shields.io/badge/%20JCenter%20-1.0.0-5bc0de.svg)](https://bintray.com/haowen/maven/huge-plugin/_latestVersion)
+[![MinSdk](https://img.shields.io/badge/%20MinSdk%20-%2014+%20-f0ad4e.svg)](https://android-arsenal.com/api?level=14)
+
 在[hugo](https://github.com/JakeWharton/hugo)基础上修改了一下日志的级别(Verbose => Debug)
 
 ## 依赖
