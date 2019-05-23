@@ -4,13 +4,13 @@ buildscript {
     repositories {
         google()
         jcenter()
-        //本地Maven仓库地址
         maven {
-            url 'file://C://Users//Li//AndroidStudioProjects//huge//repository'
+            url 'https://dl.bintray.com/haowen/maven'
         }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.4.1'
+        classpath 'com.novoda:bintray-release:0.9.1'
         classpath 'org.aspectj:aspectjtools:1.9.4'
         classpath 'com.haowen.huge:huge-plugin:1.0.0'
     }
@@ -20,11 +20,23 @@ allprojects {
     repositories {
         google()
         jcenter()
-        //本地Maven仓库地址
         maven {
-            url 'file://C://Users//Li//AndroidStudioProjects//huge//repository'
+            url 'https://dl.bintray.com/haowen/maven'
+        }
+        tasks.withType(Javadoc) {
+            options.addStringOption('Xdoclint:none', '-quiet')
+            options.addStringOption('encoding', 'UTF-8')
         }
     }
+}
+
+ext {
+    userOrg = 'haowen'
+    groupId = 'com.haowen.huge'
+    publishVersion = '1.0.0'
+    desc = 'Base on hugo,just change log level Verbose to Debug.'
+    website = 'https://github.com/HaowenLee/huge'
+    licences = ['Apache-2.0']
 }
 
 task clean(type: Delete) {
