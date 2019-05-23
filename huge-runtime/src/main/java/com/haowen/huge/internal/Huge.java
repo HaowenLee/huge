@@ -1,4 +1,4 @@
-package com.haowen.huge;
+package com.haowen.huge.internal;
 
 import android.os.Build;
 import android.os.Looper;

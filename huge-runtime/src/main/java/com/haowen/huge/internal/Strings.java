@@ -1,4 +1,4 @@
-package com.haowen.huge;
+package com.haowen.huge.internal;
 
 import java.util.Arrays;
 import java.util.HashSet;
