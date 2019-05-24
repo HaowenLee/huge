@@ -12,6 +12,7 @@ project下的build.gradle添加：
 classpath 'com.haowen.huge:huge-plugin:1.0.0'
 ```
 module下的build.gradle添加：
+```
 android {
     ...
     compileOptions {
@@ -19,6 +20,7 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 }
+```
 
 ## 使用
 
