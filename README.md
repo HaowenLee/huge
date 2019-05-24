@@ -1,6 +1,7 @@
 # huge
 
-[![JCenter](https://img.shields.io/badge/%20JCenter%20-1.0.0-5bc0de.svg)](https://bintray.com/haowen/maven/huge-plugin/_latestVersion)
+[![License](https://img.shields.io/badge/License%20-Apache%202-337ab7.svg)](https://www.apache.org/licenses/LICENSE-2.0)
+[![JCenter](https://img.shields.io/badge/%20JCenter%20-1.0.0-5bc0de.svg)](https://bintray.com/haowen/maven/huge-plugin/1.0.0)
 [![MinSdk](https://img.shields.io/badge/%20MinSdk%20-%2014+%20-f0ad4e.svg)](https://android-arsenal.com/api?level=14)
 
 在[hugo](https://github.com/JakeWharton/hugo)基础上修改了一下日志的级别(Verbose => Debug)
@@ -10,6 +11,14 @@ project下的build.gradle添加：
 ```
 classpath 'com.haowen.huge:huge-plugin:1.0.0'
 ```
+module下的build.gradle添加：
+android {
+    ...
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
 
 ## 使用
 
